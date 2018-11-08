@@ -1,0 +1,4 @@
+#!/bin/tcsh
+pushd ../redist/linux
+./testprog $*
+popd

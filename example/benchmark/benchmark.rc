@@ -1,0 +1,295 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\benchmark.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\benchmark.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About benchmark"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "benchmark Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_BENCHMARK_DIALOG DIALOGEX 0, 0, 337, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "benchmark"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Lock Type",IDC_STATIC,8,4,249,25,WS_GROUP
+    CONTROL         "Concurrent Lock",IDC_LOCK_CONCUR,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,
+                    28,15,69,12
+    CONTROL         "Mutex",IDC_LOCK_MUTEX,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_TABSTOP,119,15,35,12
+    CONTROL         "Critical Section",IDC_LOCK_CRITSECT,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_TABSTOP,176,15,63,
+                    12
+    GROUPBOX        "READ Threads",IDC_STATIC,8,31,319,76,WS_GROUP
+    LTEXT           "Number of Threads:",IDC_STATIC,54,43,64,8
+    EDITTEXT        IDC_NUM_READ_THREADS,76,53,40,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    LTEXT           "Cycle Time (msecs):",IDC_STATIC,132,43,64,8
+    EDITTEXT        IDC_MSECS_R,154,53,40,14,ES_AUTOHSCROLL
+    LTEXT           "Access Timeout (msecs):",IDC_STATIC,220,43,80,8
+    EDITTEXT        IDC_TIMEOUT_R,260,53,40,14,ES_AUTOHSCROLL
+    LTEXT           "Tries:",IDC_STATIC,49,71,18,8
+    RTEXT           "?",IDC_S_TRIES_R,77,71,67,9,SS_SUNKEN
+    LTEXT           "Success:",IDC_STATIC,37,82,30,8
+    RTEXT           "?",IDC_S_SUCCESS_R,77,82,67,9,SS_SUNKEN
+    LTEXT           "Failures:",IDC_STATIC,40,93,27,8
+    RTEXT           "?",IDC_S_FAILED_R,77,93,67,9,SS_SUNKEN
+    LTEXT           "Min Access Time:",IDC_STATIC,182,71,57,8
+    RTEXT           "?",IDC_S_MIN_R,249,71,67,9,SS_SUNKEN
+    LTEXT           "Average Access Time:",IDC_STATIC,167,82,72,8
+    RTEXT           "?",IDC_S_AVG_R,249,82,67,9,SS_SUNKEN
+    LTEXT           "Max Access Time:",IDC_STATIC,180,93,59,8
+    RTEXT           "?",IDC_S_MAX_R,249,93,67,9,SS_SUNKEN
+    GROUPBOX        "WRITE Threads",IDC_STATIC,7,112,319,76,WS_GROUP
+    LTEXT           "Number of Threads:",IDC_STATIC,54,124,64,8
+    EDITTEXT        IDC_NUM_WRITE_THREADS,76,134,40,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    LTEXT           "Cycle Time (msecs):",IDC_STATIC,132,124,64,8
+    EDITTEXT        IDC_MSECS_W,154,134,40,14,ES_AUTOHSCROLL
+    LTEXT           "Access Timeout (msecs):",IDC_STATIC,220,124,80,8
+    EDITTEXT        IDC_TIMEOUT_W,260,134,40,14,ES_AUTOHSCROLL
+    LTEXT           "Tries:",IDC_STATIC,48,151,18,8
+    RTEXT           "?",IDC_S_TRIES_W,76,151,67,9,SS_SUNKEN
+    LTEXT           "Success:",IDC_STATIC,36,162,30,8
+    RTEXT           "?",IDC_S_SUCCESS_W,76,162,67,9,SS_SUNKEN
+    LTEXT           "Failures:",IDC_STATIC,39,173,27,8
+    RTEXT           "?",IDC_S_FAILED_W,76,173,67,9,SS_SUNKEN
+    LTEXT           "Min Access Time:",IDC_STATIC,181,151,57,8
+    RTEXT           "?",IDC_S_MIN_W,248,151,67,9,SS_SUNKEN
+    LTEXT           "Average Access Time:",IDC_STATIC,166,162,72,8
+    RTEXT           "?",IDC_S_AVG_W,248,162,67,9,SS_SUNKEN
+    LTEXT           "Max Access Time:",IDC_STATIC,179,173,59,8
+    RTEXT           "?",IDC_S_MAX_W,248,173,67,9,SS_SUNKEN
+    PUSHBUTTON      "START",IDC_START,18,198,50,14,WS_GROUP
+    PUSHBUTTON      "STOP",IDC_STOP,76,198,50,14
+    PUSHBUTTON      "Show Threads...",IDC_SHOW_THREADS,138,198,110,14,
+                    WS_DISABLED
+    PUSHBUTTON      "Quit",IDCANCEL,268,198,50,14
+    CTEXT           "?",IDC_SUCCESS_RATE_R,17,43,29,20,SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_BORDER
+    CTEXT           "?",IDC_SUCCESS_RATE_W,16,124,29,20,SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_BORDER
+    LTEXT           "Duration (secs):",IDC_STATIC,273,3,50,8
+    EDITTEXT        IDC_DURATION,283,13,40,14,ES_AUTOHSCROLL
+END
+
+IDD_THREAD DIALOGEX 0, 0, 351, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Thread"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,290,206,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | NOT WS_VISIBLE | WS_BORDER | 
+                    WS_TABSTOP,9,49,336,152,WS_EX_LEFTSCROLLBAR
+    LTEXT           "Tries:",IDC_STATIC,21,8,18,8
+    LTEXT           "Success:",IDC_STATIC,9,19,30,8
+    LTEXT           "Failures:",IDC_STATIC,12,30,27,8
+    LTEXT           "Average Access Time:",IDC_STATIC,139,21,72,8
+    LTEXT           "Min Access Time:",IDC_STATIC,154,9,57,8
+    LTEXT           "Max Access Time:",IDC_STATIC,152,33,59,8
+    RTEXT           "?",IDC_S_TRIES,49,8,67,9,SS_SUNKEN
+    RTEXT           "?",IDC_S_SUCCESS,49,19,67,9,SS_SUNKEN
+    RTEXT           "?",IDC_S_FAILED,49,30,67,9,SS_SUNKEN
+    RTEXT           "?",IDC_S_MIN,221,9,67,9,SS_SUNKEN
+    RTEXT           "?",IDC_S_AVG,221,21,67,9,SS_SUNKEN
+    RTEXT           "?",IDC_S_MAX,221,33,67,9,SS_SUNKEN
+    PUSHBUTTON      "Show Details....",IDC_DETAILS,11,207,120,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "benchmark MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "benchmark\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "benchmark.EXE\0"
+            VALUE "ProductName", "benchmark Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_BENCHMARK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_THREAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About benchmark..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\benchmark.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

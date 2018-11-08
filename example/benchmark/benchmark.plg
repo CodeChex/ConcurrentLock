@@ -1,0 +1,139 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: benchmark - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/benchmark.res" /d "NDEBUG" /d "_AFXDLL" "D:\DEV\ConcurrentLock\benchmark\benchmark.rc"" 
+Creating temporary file "K:\TEMP\RSP1F0.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/benchmark.pdb" /machine:I386 /out:"Release/benchmark.exe" /libpath:"..\redist\Release" 
+.\Release\benchmark.obj
+.\Release\benchmarkDlg.obj
+.\Release\BenchmarkThreadDlg.obj
+.\Release\StdAfx.obj
+.\Release\benchmark.res
+\DEV\ConcurrentLock\source\Release\ConcurrentLock.lib
+]
+Creating command line "link.exe @K:\TEMP\RSP1F0.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+Creating temporary file "K:\TEMP\RSP1F2.bat" with contents
+[
+@echo off
+copy Release\*.exe ..\redist\release
+]
+Creating command line "K:\TEMP\RSP1F2.bat"
+
+Release\benchmark.exe
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+benchmark.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: benchmark - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/benchmark.res" /d "_DEBUG" /d "_AFXDLL" "D:\DEV\ConcurrentLock\benchmark\benchmark.rc"" 
+Creating temporary file "K:\TEMP\RSP1F3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/benchmark.pdb" /debug /machine:I386 /out:"Debug/benchmark.exe" /pdbtype:sept /libpath:"..\redist\Debug" 
+.\Debug\benchmark.obj
+.\Debug\benchmarkDlg.obj
+.\Debug\BenchmarkThreadDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\benchmark.res
+\DEV\ConcurrentLock\source\Debug\ConcurrentLock.lib
+]
+Creating command line "link.exe @K:\TEMP\RSP1F3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+Creating temporary file "K:\TEMP\RSP1F4.bat" with contents
+[
+@echo off
+copy debug\*.exe ..\redist\debug
+]
+Creating command line "K:\TEMP\RSP1F4.bat"
+
+debug\benchmark.exe
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+benchmark.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: benchmark - Win32 Debug UNICODE--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"DebugU/benchmark.res" /d "_DEBUG" /d "_AFXDLL" "D:\DEV\ConcurrentLock\benchmark\benchmark.rc"" 
+Creating temporary file "K:\TEMP\RSP1F5.tmp" with contents
+[
+/nologo /entry:"wWinMainCRTStartup" /subsystem:windows /incremental:yes /pdb:"DebugU/benchmarkU.pdb" /debug /machine:I386 /out:"DebugU/benchmarkU.exe" /pdbtype:sept /libpath:"..\redist\Debug" 
+.\DebugU\benchmark.obj
+.\DebugU\benchmarkDlg.obj
+.\DebugU\BenchmarkThreadDlg.obj
+.\DebugU\StdAfx.obj
+.\DebugU\benchmark.res
+\DEV\ConcurrentLock\source\DebugU\ConcurrentLockU.lib
+]
+Creating command line "link.exe @K:\TEMP\RSP1F5.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+Creating temporary file "K:\TEMP\RSP1F6.bat" with contents
+[
+@echo off
+copy debugU\*.exe ..\redist\debug
+]
+Creating command line "K:\TEMP\RSP1F6.bat"
+
+debugU\benchmarkU.exe
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+benchmarkU.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: benchmark - Win32 Release UNICODE--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"ReleaseU/benchmark.res" /d "NDEBUG" /d "_AFXDLL" "D:\DEV\ConcurrentLock\benchmark\benchmark.rc"" 
+Creating temporary file "K:\TEMP\RSP1F7.tmp" with contents
+[
+/nologo /entry:"wWinMainCRTStartup" /subsystem:windows /incremental:no /pdb:"ReleaseU/benchmarkU.pdb" /machine:I386 /out:"ReleaseU/benchmarkU.exe" /libpath:"..\redist\Release" 
+.\ReleaseU\benchmark.obj
+.\ReleaseU\benchmarkDlg.obj
+.\ReleaseU\BenchmarkThreadDlg.obj
+.\ReleaseU\StdAfx.obj
+.\ReleaseU\benchmark.res
+\DEV\ConcurrentLock\source\ReleaseU\ConcurrentLockU.lib
+]
+Creating command line "link.exe @K:\TEMP\RSP1F7.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+Creating temporary file "K:\TEMP\RSP1F9.bat" with contents
+[
+@echo off
+copy ReleaseU\*.exe ..\redist\release
+]
+Creating command line "K:\TEMP\RSP1F9.bat"
+
+ReleaseU\benchmarkU.exe
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+benchmarkU.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
