@@ -1,0 +1,6 @@
+# Microsoft Developer Studio Generated Dependency File, included by Makefile
+
+.\ConcurrentLock.cpp : \
+	".\ConcurrentLock.h"\
+	".\ConcurrentLock_Private.h"\
+
