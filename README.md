@@ -1,2 +1,2 @@
 # ConcurrentLock
-Simple C++ library for CONCURRENT READ and EXCLUSIVE WRITEaccess to a class or its members
+Simple C++ library for CONCURRENT READ and EXCLUSIVE WRITE access to a class or its members
