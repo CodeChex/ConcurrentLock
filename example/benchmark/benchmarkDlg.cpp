@@ -65,11 +65,11 @@ CBenchmarkDlg::CBenchmarkDlg(CWnd* pParent /*=NULL*/)
 {
 	//{{AFX_DATA_INIT(CBenchmarkDlg)
 	m_nRead = 10;
-	m_msecsR = 50;
-	m_timeoutR = 125;
-	m_nWrite = 1;
-	m_msecsW = 10;
-	m_timeoutW = 250;
+	m_msecsR = 10;
+	m_timeoutR = 100;
+	m_nWrite = 2;
+	m_msecsW = 25;
+	m_timeoutW = 100;
 	m_szAvgR = _T("");
 	m_szAvgW = _T("");
 	m_szFailedR = _T("");
